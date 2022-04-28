@@ -30,7 +30,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         verticalView = findViewById(R.id.vertical_view);
         horizontalView = findViewById(R.id.horizontal_view);
         gridView = findViewById(R.id.grid_view);
-        staggeredView = findViewById(R.id.staegged_view);
+        staggeredView = findViewById(R.id.staggered_view);
 
         verticalView.setOnClickListener(this);
         horizontalView.setOnClickListener(this);
@@ -59,7 +59,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 gridView.putExtra("orientation", "grid");
                 startActivity(gridView);
 
-            case R.id.staegged_view:
+            case R.id.staggered_view:
                 Intent i = new Intent(getApplicationContext(), RecyclerActivity.class);
                 i.putExtra("orientation", "staggered");
                 startActivity(i);
