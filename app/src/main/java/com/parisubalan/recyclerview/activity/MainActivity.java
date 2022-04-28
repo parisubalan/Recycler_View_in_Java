@@ -4,8 +4,8 @@ import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.view.ViewGroup;
 import android.widget.Button;
-
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -36,6 +36,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         horizontalView.setOnClickListener(this);
         gridView.setOnClickListener(this);
         staggeredView.setOnClickListener(this);
+
     }
 
     @SuppressLint("NonConstantResourceId")
@@ -45,6 +46,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         switch (v.getId())
         {
             case R.id.vertical_view :
+//                throw new RuntimeException ("Crash Occurred for 48 Line");
                 Intent verticalView = new Intent(getApplicationContext(), RecyclerActivity.class);
                 verticalView.putExtra("orientation", "vertical");
                 startActivity(verticalView);

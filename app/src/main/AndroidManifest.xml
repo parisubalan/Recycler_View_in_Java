@@ -11,9 +11,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Recycler_View"
-        android:fullBackupContent="">
+        android:fullBackupContent="true">
         <activity
-            android:name="com.parisubalan.recyclerview.activity.MainActivity"
+            android:name=".activity.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -21,13 +21,13 @@
             </intent-filter>
         </activity>
 
-        <activity android:name="com.parisubalan.recyclerview.activity.RecyclerActivity">
+        <activity android:name=".activity.RecyclerActivity">
         </activity>
 
-        <activity android:name="com.parisubalan.recyclerview.activity.StaggeredGridActivity">
+        <activity android:name=".activity.StaggeredGridActivity">
         </activity>
 
-        <activity android:name="com.parisubalan.recyclerview.activity.GridActivity">
+        <activity android:name=".activity.GridActivity">
         </activity>
 
     </application>
